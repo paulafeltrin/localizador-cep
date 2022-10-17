@@ -25,7 +25,7 @@ export default function Formulario(){
 
     return(
         <>
-            <S.Input value={input} onChange={e => {setInput(e.target.value)}} />
+            <S.Input value={input} onChange={e => {setInput(e.target.value)}} placeholder={"Digite aqui seu CEP"} />
             <S.Button onClick={() => {getApi()}}>Procurar</S.Button>
             <S.P>{endereco.rua}</S.P>
             <S.P>{endereco.bairro}</S.P>
